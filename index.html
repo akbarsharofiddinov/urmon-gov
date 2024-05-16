@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Header =============================== -->
@@ -16,15 +20,11 @@
             <a href="/" class="logo header-col-1">
               <img src="./src/images/logo/gerb.svg" alt="logo image" />
               <img src="./src/images/logo/flag.svg" alt="logo image" />
-              <span class="logo_title">
-                Ekologiya, atrof-muhitni muhofaza qilish va iqlim o'zgarishi
-                vazirligi huzuridagi O'rmon xo'jaligi agentligining rasmiy veb
-                sayti
-              </span>
+              <span class="logo_title"> OROL BO'YI MILLIY TABIYAT BOG'I </span>
             </a>
             <div class="phone-box header-col-2">
               <p class="phone_title">Ishonch raqami</p>
-              <a href="tel: (+998 71) 207-88-77"> (+998 71) 207-88-77 </a>
+              <a href="tel: (+998 71) 207-88-77"> (+998 97) 649-25-79 </a>
             </div>
             <div class="header-col-3">
               <!-- Social media -->
@@ -195,7 +195,7 @@
 
     <!-- Section Media -->
     <section class="section-media container">
-      <div class="section_title title">Media</div>
+      <h2 class="section_title title">Media</h2>
       <div class="medias">
         <a href="#">
           <img src="./src/images/media/media-1.webp" alt="media" />
@@ -215,15 +215,512 @@
         <a href="#">
           <img src="./src/images/media/media-1.webp" alt="media" />
         </a>
-        <a class="button_link" href="#">Barchasi</a>
+        <a class="button_link" href="#">Barchasi &rightarrow;</a>
       </div>
     </section>
     <!-- ======================================= -->
 
-    <script src="./src/app.js"></script>
+    <!-- Section Statistics -->
+    <section class="section-statistic container">
+      <h2 class="section-title title">Statistika</h2>
+      <div class="statistic-inner">
+        <div class="statistic col-1">
+          <p><span>60</span> ta tur</p>
+          <p>Yetishtiriladigan nihol va ko'chat turlari</p>
+        </div>
+        <div class="statistic col-2">
+          <p><span>200</span> ming gektar</p>
+          <p>Yiliga o'rtacha barpo etiladigan o'rmonlar</p>
+        </div>
+        <div class="statistic col-3">
+          <p><span>5</span> mln gektar</p>
+          <p>O'rmonli yerlar</p>
+        </div>
+        <div class="statistic col-4">
+          <p><span>12</span> mln gektar</p>
+          <p>O'rmon fondi yerlari</p>
+        </div>
+      </div>
+    </section>
+    <!-- ======================================= -->
+
+    <!-- Section Poll -->
+    <section class="section-poll container">
+      <div class="poll-box">
+        <p class="poll-heading">
+          <i class="fa-solid fa-phone"></i>
+          <span>Iltimos, ishonch telefon xizmati sifatini baholang </span>
+        </p>
+        <form>
+          <div class="radio radio-1">
+            <input type="radio" name="radio" id="radio-1" value="5" />
+            <label for="radio-1">A'lo</label>
+          </div>
+          <div class="radio radio-2">
+            <input type="radio" name="radio" id="radio-2" value="4" />
+            <label for="radio-2">Yaxshi</label>
+          </div>
+          <div class="radio radio-3">
+            <input type="radio" name="radio" id="radio-3" value="3" />
+            <label for="radio-3">Qoniqarli</label>
+          </div>
+          <div class="radio radio-2">
+            <input type="radio" name="radio" id="radio-2" value="2" />
+            <label for="radio-2">Qoniqarsiz</label>
+          </div>
+        </form>
+        <button class="poll-submit_btn">Ovoz berish</button>
+      </div>
+    </section>
+    <!-- ======================================= -->
+
+    <!-- Section Departments -->
+    <section class="section-departments container">
+      <h2 class="section-title title">Hududiy boshqarmalar</h2>
+      <div class="section-inner">
+        <div class="map">
+          <img src="./src/images/map/map.svg" alt="map image" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="andijon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="namangan"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="farg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="toshkent"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="sirdaryo"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="jizzax"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="samarqand"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="qashqadaryo"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="surxondaryo"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="navoiy"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="buxoro"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="qoraqalpo"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#00B533"
+            id="xorazm"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <div class="info-sidebar">
+          <p class="info-title">Sirdaryo davlat o‘rmon xo‘jaligi</p>
+          <p><span>Direktor:</span>Ergashev Oybek</p>
+          <p>
+            <span>Manzil:</span>Sirdaryo Viloyati, Guliston shaxri, Ulug‘-yo‘l
+            MFY, Beruniy ko‘chasi, 64-uy
+          </p>
+          <p><span>Email:</span>sirdaryo@urmon.uz</p>
+          <p><span>Telefon:</span>+998 67 2271623</p>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================== -->
+
+    <!-- Section Contact -->
+    <section class="section-contact container">
+      <h2 class="section-title title">Bog'lanish</h2>
+      <div class="section-inner">
+        <div class="contact-info">
+          <p>
+            <span>Manzil:</span>100163, Toshkent viloyati, Qibray
+            tumani,Universitet ko‘chasi, 2-uy.
+          </p>
+          <p>
+            <span>Ish vaqti:</span>Dushanba-juma 9:00 dan 18:00 gacha, Jamoat
+            transporti raqamlari - 129, 523, 83, 96, 115
+          </p>
+          <p><span>Ishonch telefonlari:</span>(+998 71) 207-88-77</p>
+          <p><span>Devonxona:</span>(+998 71) 263-06-70</p>
+          <p><span>Elektron pochta:</span>info@urmon.uz</p>
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.6302297592549!2d69.3406637!3d41.3627658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef351354984e3%3A0x3726da5f1689e098!2z0I7RgNC80L7QvSDRhdGe0LbQsNC70LjQs9C4INC00LDQstC70LDRgiDSm9Ge0LzQuNGC0LDRgdC4!5e0!3m2!1sru!2s!4v1667285458461!5m2!1sru!2s"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            width="100%"
+            height="450px"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- ======================================= -->
+
+    <!-- Section Foydali lavhalar -->
+    <section class="section-links container">
+      <h2 class="section-title title">Foydali lavhalar</h2>
+      <div class="swiper swiper-links">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+          <div class="swiper-slide">
+            <img src="./src/images/swiper/swiper-gerb.webp" alt="swiper gerb" />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- ====================================== -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top top-inner">
+          <a href="/" class="logo header-col-1">
+            <img src="./src/images/logo/gerb.svg" alt="logo image" />
+            <img src="./src/images/logo/flag.svg" alt="logo image" />
+            <span class="logo_title"> OROL BO'YI MILLIY TABIYAT BOG'I </span>
+          </a>
+          <form class="footer_subscribe">
+            <input
+              type="email"
+              name="email-subs"
+              id="email-subs"
+              placeholder="Elektron pochtangiz"
+            />
+            <button type="submit" class="btn-footer_subs btn btn--primary">
+              Obuna bo'lish
+            </button>
+          </form>
+          <a href="/virtual-appeals?lang=uz" class="btn btn--primary"
+            >Virtual murojaat</a
+          >
+        </div>
+        <div class="footer-nav">
+          <div class="col-1 col">
+            <h4 class="col-title">Agentlik haqida</h4>
+            <ul class="col-menu">
+              <li class="col-menu_item">
+                <a href="#">Faoliyat</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Tizim tashkilotlari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Ekoturizm</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Elektron hukumat</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Hay’at</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Tarkibiy tuzilma</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Markaziy apparat</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Faoliyat ko‘rsatkichlari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Korrupsiyaga qarshi kurashish</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Jamoatchilik kengashi</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Agentlik funksiyalari va vazifalari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Rahbariyat</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 col">
+            <h4 class="col-title">Hujjatlar</h4>
+            <ul class="col-menu">
+              <li class="col-menu_item">
+                <a href="#">O‘zbekiston Respublikasi qonunlari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Prezidentning farmon, qaror va farmoyishlari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Vazirlar Mahkamasi qaror va farmoyishlari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Muhokamadagi hujjatlar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Agentlik hujjatlari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#"
+                  >Sohaga oid kuchini yo‘qotgan normativ-huquqiy hujjatlar</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 col">
+            <h4 class="col-title">Matbuot markazi</h4>
+            <ul class="col-menu">
+              <li class="col-menu_item">
+                <a href="#">Videogalereya</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Fotogalereya</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Rahbariyat maʼruzalari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Matbuot xizmati bilan bog‘lanish</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Yangiliklar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Eʼlon va voqealar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Savol va javoblar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Tenderlar va xaridlar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Agentlik rahbarlarining chiqishlari</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Matbuot anjumani va brifinglar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Rasmiy munosabat</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-4 col">
+            <h4 class="col-title">Interaktiv xizmatlar</h4>
+            <ul class="col-menu">
+              <li class="col-menu_item">
+                <a href="#">Fuqarolar murojaati</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Elektron hisobot</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Virtual qabulxona</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Forum</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Ruxsatnoma olish portali</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Yuklab olish uchun shakllar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">O‘rmon fondi yerlarini ijaraga olish portali</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-5 col">
+            <h4 class="col-title">Ochiq ma’lumotlar</h4>
+            <ul class="col-menu">
+              <li class="col-menu_item">
+                <a href="#">Investitsion loyihalar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Ijtimoiy ahamiyatga molik maʼlumotlar</a>
+              </li>
+              <li class="col-menu_item">
+                <a href="#">Byudjet ochiqligi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col">
+            <h4 class="col-title">Ma’lumot</h4>
+          </div>
+          <div class="col-7 col">
+            <h4 class="col-title">Bog‘lanish</h4>
+          </div>
+          <div class="col-8 col">
+            <h4 class="col-title">
+              <a
+                href="http://www.uz/ru/res/visitor/index?id=47227"
+                style="text-decoration: underline; color: rgb(0, 81, 255)"
+              >
+                Топ рейтинг www.uz
+              </a>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top_btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/32ee8f9848.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./src/app.js"></script>
   </body>
 </html>
