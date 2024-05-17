@@ -53,6 +53,14 @@ button {
 
 /* ----- Header ------- */
 
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
 .header-top {
   background-image: url("./images/header-bg/headerTop-bg.webp");
   background-repeat: no-repeat;
