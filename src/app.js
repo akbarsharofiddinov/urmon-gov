@@ -9,6 +9,19 @@ var swiper = new Swiper(".swiper-links", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    1140: {
+      slidesPerView: 3,
+    },
+
+    720: {
+      slidesPerView: 2,
+    },
+
+    300: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 window.addEventListener("scroll", () => {
