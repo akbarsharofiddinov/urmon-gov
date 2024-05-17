@@ -572,7 +572,7 @@ button {
 
 .swiper-links {
   padding-bottom: 40px !important;
-  width: 100% !important;
+  width: 90% !important;
 }
 
 .swiper-slide {
@@ -598,12 +598,23 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 100vh 0 #018b28cc;
+  position: relative;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #018b28cc;
 }
 
 .footer-top {
   border-bottom: 2px solid rgba(238, 252, 236, 0.6);
   padding: 24px 0;
+  z-index: 5;
 }
 
 .footer_subscribe {
@@ -641,9 +652,15 @@ button {
 
 .footer-nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+  grid-template-columns: repeat(4, 1fr) !important;
   gap: 3rem;
   padding: 25px 0;
+  color: #fff;
+  z-index: 99;
+  position: relative;
+}
+
+.footer-nav a {
   color: #fff;
 }
 
@@ -770,11 +787,15 @@ button {
 
   .section-contact .section-inner .google-map {
     height: 100%;
-    width: 100%;
+    width: 90%;
   }
 
   .section-contact .contact-info p {
     font-size: 16px !important;
+  }
+
+  .footer-nav {
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
@@ -789,6 +810,10 @@ button {
     flex-direction: column !important;
   }
 
+  .newsCard:first-child img {
+    max-width: 100%;
+  }
+
   .newsCard:first-child .newsCard_title {
     font-size: 16px !important;
   }
@@ -800,4 +825,187 @@ button {
   .section-news .ads {
     flex: auto !important;
   }
+
+  .footer .footer-top .logo.header-col-1 {
+    display: none;
+  }
+
+  .footer-top {
+    justify-content: space-between !important;
+  }
+
+  .footer-top.top-inner {
+    padding: 0 !important;
+  }
+
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-top.top-inner {
+    padding-bottom: 20px !important;
+  }
+
+  .footer-top button,
+  .footer-top a {
+    padding: 6px 12px !important;
+    font-size: 13px !important;
+  }
+
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-contact .section-inner .contact-info {
+    width: auto !important;
+  }
+
+  .section-contact .section-inner .google-map {
+    width: 100% !important;
+  }
+
+  .section-title.title {
+    font-size: 22px !important;
+  }
+
+  section {
+    padding: 20px 15px !important;
+  }
+
+  .section-links .swiper-slide {
+    font-size: 14px !important;
+  }
+
+  .section-links .swiper-slide img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .section-contact .contact-info p {
+    font-size: 14px !important;
+  }
+
+  .section-contact .contact-info span {
+    font-size: 12px !important;
+  }
+
+  .section-departments .section-inner .info-sidebar p {
+    font-size: 16px !important;
+  }
+
+  .section-departments .section-inner .info-sidebar span {
+    font-size: 12px !important;
+  }
+
+  .statistic p {
+    font-size: 16px !important;
+  }
+
+  .statistic span {
+    font-size: 32px !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  header .container {
+    padding: 10px !important;
+  }
+  .header-top {
+    padding: 0 !important;
+  }
+
+  .top-inner {
+    padding-right: 35px !important;
+  }
+
+  .header-top .logo.header-col-1 {
+    font-size: 10px !important;
+    gap: 0px !important;
+    flex: unset !important;
+  }
+
+  .logo.header-col-1 .logo_title {
+    width: 100px !important;
+  }
+
+  .logo.header-col-1 img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .header-col-2 p,
+  .header-col-2 a {
+    font-size: 10px !important;
+  }
+
+  .header-col-3 .search-button,
+  .header-bar {
+    padding: 8px !important;
+    font-size: 12px;
+  }
+
+  .header-bar {
+    padding: 8px 10px !important;
+  }
+
+  /* Section News */
+  .newsCards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Section Media */
+
+  .section-media .medias {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .medias a {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .medias .button_link {
+    height: 150px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Statistics */
+
+  .statistic-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .poll-box {
+    padding: 30px !important;
+  }
+
+  /* Section Poll */
+  .section-poll .poll-box form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-nav {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+
+.header-top .footer-nav {
+  display: none;
+}
+
+.header-top .footer-nav.active {
+  display: grid;
 }

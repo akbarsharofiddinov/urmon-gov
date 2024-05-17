@@ -31,3 +31,10 @@ window.addEventListener("scroll", () => {
     document.querySelector(".to-top_btn").style.transform = "translateX(200%)";
   }
 });
+
+const headerBar = document.querySelector(".header-bar");
+
+headerBar.addEventListener("click", (e) => {
+  document.querySelector(".footer-nav").classList.toggle("active");
+});
+  
