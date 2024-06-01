@@ -45,10 +45,54 @@
                   <i class="fa-solid fa-volume-high"></i>
                 </button>
                 <div class="accessibility-box">
-                  <button class="header-icon">
+                  <button class="header-icon" id="accessibility-view_btn">
                     <i class="fa-solid fa-eye"></i>
                   </button>
-                  <!-- <div class="accessibility-inner"></div> -->
+                  <div class="accessibility__appearance__inner">
+                    <div class="view">
+                      <p
+                        class="accessibility__appearance__inner__text"
+                        data-type="header-appearance"
+                      >
+                        Ko'rinish
+                      </p>
+                      <div class="btns">
+                        <button
+                          class="accessibility__appearance__inner__item no-mode"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                        <button
+                          class="accessibility__appearance__inner__item black-and-white"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                        <button
+                          class="accessibility__appearance__inner__item black"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                      </div>
+                    </div>
+                    <p
+                      class="accessibility__appearance__inner__text"
+                      data-type="header-appearance"
+                    >
+                      Shirift o'lchami <span id="fontSize"></span>
+                    </p>
+                    <input
+                      data-type="header-appearance"
+                      type="range"
+                      id="range"
+                      min="0"
+                      max="5"
+                      value="0"
+                      step="0.1"
+                    />
+                  </div>
                 </div>
               </div>
               <!-- Select Language -->
