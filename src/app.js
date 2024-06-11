@@ -1,26 +1,17 @@
-var swiper = new Swiper(".swiper-links", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
+var swiper = new Swiper(".banner-swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
   },
-  breakpoints: {
-    1140: {
-      slidesPerView: 3,
-    },
 
-    720: {
-      slidesPerView: 2,
-    },
+  loop: true,
 
-    300: {
-      slidesPerView: 1,
-    },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
 });
 
@@ -93,3 +84,5 @@ accessViewBTN.addEventListener("click", () => {
     .querySelector(".accessibility__appearance__inner")
     .classList.toggle("active");
 });
+
+

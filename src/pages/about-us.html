@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top -->
+      <div class="header-top">
+        <div class="container">
+          <div class="top-inner">
+            <a href="/" class="logo header-col-1">
+              <img src="../images/logo/gerb.svg" alt="logo image" />
+              <img src="../images/logo/flag.svg" alt="logo image" />
+              <span class="logo_title"> OROL BO'YI MILLIY TABIYAT BOG'I </span>
+            </a>
+            <div class="phone-box header-col-2">
+              <p class="phone_title">Ishonch raqami</p>
+              <a href="tel: (+998 71) 207-88-77"> (+998 97) 649-25-79 </a>
+            </div>
+            <div class="header-col-3">
+              <!-- Social media -->
+              <div class="social-media_links">
+                <a href="#" class="header-icon"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="header-icon"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="header-icon"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </div>
+              <!-- Accessibility -->
+              <div class="accessibility">
+                <button class="header-icon">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <div class="accessibility-box">
+                  <button class="header-icon" id="accessibility-view_btn">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                  <div class="accessibility__appearance__inner">
+                    <div class="view">
+                      <p
+                        class="accessibility__appearance__inner__text"
+                        data-type="header-appearance"
+                      >
+                        Ko'rinish
+                      </p>
+                      <div class="btns">
+                        <button
+                          class="accessibility__appearance__inner__item no-mode"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                        <button
+                          class="accessibility__appearance__inner__item black-and-white"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                        <button
+                          class="accessibility__appearance__inner__item black"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                      </div>
+                    </div>
+                    <p
+                      class="accessibility__appearance__inner__text"
+                      data-type="header-appearance"
+                    >
+                      Shirift o'lchami <span id="fontSize"></span>
+                    </p>
+                    <input
+                      data-type="header-appearance"
+                      type="range"
+                      id="range"
+                      min="0"
+                      max="5"
+                      value="0"
+                      step="0.1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Select Language -->
+              <div class="lang-switch">
+                <span class="current-lang">O'zbek</span>
+                <!-- <ul class="lang-list">
+                <li class="lang-select_item"><a href="/">O'zbek</a></li>
+                <li class="lang-select_item"><a href="/">Русский</a></li>
+                <li class="lang-select_item"><a href="/">English</a></li>
+              </ul> -->
+              </div>
+              <!-- Search box -->
+              <button class="search-button header-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <button class="header-bar"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- ========================== -->
+
+      <!-- Menu -->
+      <div class="header-menu">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu_item"><a href="/">Бас бет</a></li>
+            <li class="menu_item">
+              <a href="/src/pages/about-us.html">Биз хаккымызда</a>
+            </li>
+            <li class="menu_item"><a href="./administration.html">Администрация</a></li>
+            <li class="menu_item">
+              <a href="./photo-gallery.html">Фото галерия</a>
+            </li>
+            <li class="menu_item"><a href="/#contact">Байланыс</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ========================= -->
+    </header>
+
+    <section class="section-about">
+      <div class="container">
+        <div class="row-1 row">
+          <p>
+            <b>Orolbo’yi milliy tabiat bog’i</b>-Alohida ekologik, madaniy va
+            estetik qimmatga ega bo‘lgan tabiiy obyektlar va majmualarni
+            tabiatni muhofaza qilish yo‘nalishidagi, rekreatsiya, ilmiy va
+            madaniy maqsadlarda saqlab qolish hamda ulardan foydalanish uchun
+            mo‘ljallangan muhofaza etiladigan tabiiy hududlar bilamizkiy tabiat
+            bog‘lari hisoblanadi.Shu boyis Ozbekiston Respublikasi
+            Prezidentining 2019-yil 23-avgustagi PQ-4424 sonli Respublikada
+            o’rmonlardan poydalanish samaradorligini oshirishga doyir qoshma
+            shora-tadbirlar tog’risidagi qarori ijrosini taminlash maxsadida
+            Qoraqalpog’iston Respublikasi Vazirlar kengashining 2019- yil
+            30-avgusttagi 295-sonli qarori bilan tashkil topgan.
+          </p>
+          <p>
+            Umumiy yer maydoni 3165.94 Gektarni tashkil qiladib shundan
+            qoriqlanma maydoni 2317.86 Ga,Rekratsiya maydoni 488.78 Ga va
+            xojalik maxsadida foydalanigan hududdi 399.37 Ga tashkil
+            qiladi.Orolboyi milliy tabait bog’ining Flora va Faunasi oziga hos
+            ayniqsa nayob turdagi qushlarning kopligi har yili son jiqtanham tur
+            jiqtan ham kopayib boriliyotgani shu yerda ilmiy izlanish olib
+            boriyodgan yosh olimlarni hayratga solishta davom etmoqta. Misoli
+            ushun 2021-yil kuzgi sanoq ishlarida 85 turdgi umirtqaliy hayvonlar
+            royqatga olingan bolsa bugungi kunga kelib ularning soni 100 (yuz)
+            ga yaqain turlari aniqlangan shulardan 16 tasi sut emizuvshilar 12
+            tasi sudraluvshilar bolib 70 ga yaqin turlari qushlar bolib
+            hisoplanadi shulardan Ozbekiston Respublikasi qizil kitobiga
+            kiritilgan qushlarmizning 13 turi mavjud.
+          </p>
+        </div>
+        <div class="row-2 row">
+          <h3 class="title">Geografiya va Iqlimi</h3>
+          <p>
+            Orolbo’yi milliy tabiat bog’i Buzato’v tumanining Erkindariya OPI
+            Dovutkol kolining Shimoliy g’arbida joylashgan, dengiz satqidan
+            55-65 м balandlikta, u eniga 1 km dan 1,5 km gasha uzunligi 15 km ni
+            tashkil qiladi. Ekologik sharayoti yomanlashishi bilan kishi uzoq
+            davom etadigan qattiq va yozi quriq buladi.Yanvar oyida harorati
+            29-31 c eng past harorati -42 c. -42°Cgasha etadi . Yoz oylari juda
+            quriq va issiq buladi. Iyul oyining urtasha harorati +26 c yillik
+            namlik 70-110 мм. Qor 25-30 kungasha erimaydi . ayrim yillarda qor
+            umuman yog’maydi qish faslida 50 sm yer muzlaydi shamol doyimo esib
+            turadi iqlimi quriq
+          </p>
+          <p>
+            Hududning iqlim sharayotining yana bir ozgashaligi boshqa hududlarga
+            nisbatan bahor fasli kesh, u qisqa vaqt ishida utadi bahorning
+            daslapki oylari salqin keladi mart oyida havoning ortasha harorati
+            +4, + 10 c buladi aprelda esa u 13-19 gasha kotariladi havoning
+            ortasha harorati yoz oylari 24-28 c kuz faslining sentyabr oyida
+            19,40С va окtiyabr oyida 10 atrofida boladi
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top top-inner">
+          <a href="/" class="logo header-col-1">
+            <img src="../images/logo/gerb.svg" alt="logo image" />
+            <img src="../images/logo/flag.svg" alt="logo image" />
+            <span class="logo_title"> OROL BO'YI MILLIY TABIYAT BOG'I </span>
+          </a>
+          <h2 class="section-title title">Bog'lanish</h2>
+        </div>
+        <!-- Section Contact -->
+        <section class="section-contact">
+          <div class="section-inner">
+            <div class="contact-info">
+              <p>
+                <span>Manzil:</span>100163, Toshkent viloyati, Qibray
+                tumani,Universitet ko‘chasi, 2-uy.
+              </p>
+              <p>
+                <span>Ish vaqti:</span>Dushanba-juma 9:00 dan 18:00 gacha,
+                Jamoat transporti raqamlari - 129, 523, 83, 96, 115
+              </p>
+              <p><span>Ishonch telefonlari:</span>(+998 71) 207-88-77</p>
+              <p><span>Devonxona:</span>(+998 71) 263-06-70</p>
+              <p><span>Elektron pochta:</span>info@urmon.uz</p>
+            </div>
+            <div class="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d748.6302297592549!2d69.3406637!3d41.3627658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef351354984e3%3A0x3726da5f1689e098!2z0I7RgNC80L7QvSDRhdGe0LbQsNC70LjQs9C4INC00LDQstC70LDRgiDSm9Ge0LzQuNGC0LDRgdC4!5e0!3m2!1sru!2s!4v1667285458461!5m2!1sru!2s"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="100%"
+                height="450px"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <!-- ======================================= -->
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/32ee8f9848.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../app.js"></script>
+  </body>
+</html>
