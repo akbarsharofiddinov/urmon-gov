@@ -279,27 +279,39 @@
     <section class="section-media container">
       <h2 class="section_title title">Media</h2>
       <div class="medias">
-        <a href="#">
+        <div class="img-box">
           <img src="./src/images/media/media-10.jpg" alt="media" />
-        </a>
-        <a href="#">
+          <span><i class="fa-solid fa-expand"></i></span>
+        </div>
+        <div class="img-box">
           <img src="./src/images/media/media-11.jpg" alt="media" />
-        </a>
-        <a href="#">
+          <span><i class="fa-solid fa-expand"></i></span>
+        </div>
+        <div class="img-box">
           <img src="./src/images/media/media-12.jpg" alt="media" />
-        </a>
-        <a href="#">
+          <span><i class="fa-solid fa-expand"></i></span>
+        </div>
+        <div class="img-box">
           <img src="./src/images/media/media-13.jpg" alt="media" />
-        </a>
-        <a href="#">
+          <span><i class="fa-solid fa-expand"></i></span>
+        </div>
+        <div class="img-box">
           <img src="./src/images/media/media-14.jpg" alt="media" />
-        </a>
-        <a href="#">
+          <span><i class="fa-solid fa-expand"></i></span>
+        </div>
+        <div class="img-box">
           <img src="./src/images/media/media-15.jpg" alt="media" />
-        </a>
-        <a class="button_link" href="./src/pages/photo-gallery.html"
+          <span><i class="fa-solid fa-expand"></i></span>
+        </div>
+        <a class="button_link img-box" href="./src/pages/photo-gallery.html"
           >Barchasi &rightarrow;</a
         >
+      </div>
+
+      <div class="modal">
+        <div class="modal-inner">
+          <button class="close-modal">&times;</button>
+        </div>
       </div>
     </section>
     <!-- ======================================= -->
@@ -412,5 +424,25 @@
       crossorigin="anonymous"
     ></script>
     <script src="./src/app.js"></script>
+    <script>
+      const mediaImages = document.querySelectorAll(".img-box");
+      const modal = document.querySelector(".modal");
+      const modalInner = document.querySelector(".modal-inner");
+
+      mediaImages.forEach((image, index) => {
+        image.addEventListener("click", () => {
+          modal.classList.add("active");
+          const imgElement = document.createElement("img");
+          imgElement.setAttribute("alt", "image");
+          imgElement.setAttribute("src", image.children[0].getAttribute("src"));
+          modalInner.append(imgElement);
+        });
+      });
+
+      const closeModal = document.querySelector(".close-modal");
+      closeModal.addEventListener("click", () => {
+        modal.classList.remove("active");
+      });
+    </script>
   </body>
 </html>
