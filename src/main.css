@@ -927,6 +927,12 @@ section {
   color: var(--main-light-color);
 }
 
+/* ======================== */
+
+.collapse {
+  display: none !important;
+}
+
 /* ==================================- */
 
 @media screen and (max-width: 1140px) {
@@ -996,6 +1002,16 @@ section {
 
   .section-contact .contact-info p {
     font-size: 16px !important;
+  }
+
+  .collapse {
+    display: flex !important;
+  }
+
+  .header-menu .menu {
+    flex-direction: column;
+    gap: 25px;
+    margin: 60px 0 20px 0;
   }
 }
 
@@ -1203,10 +1219,4 @@ section {
 
 .header-menu.active {
   transform: translateX(0);
-}
-
-.header-menu.active .menu {
-  flex-direction: column;
-  gap: 25px;
-  margin: 60px 0 20px 0;
 }
