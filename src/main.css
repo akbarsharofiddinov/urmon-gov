@@ -907,7 +907,15 @@ section {
   }
 
   .header-menu {
-    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+
+    transform: translateX(100%);
+
+    transition: transform 0.4s;
   }
 
   .section-news {
@@ -983,6 +991,16 @@ section {
   .footer-top.top-inner {
     padding: 0 !important;
   }
+
+  .section-links .links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .modal-inner {
+    width: 500px !important;
+    height: 300px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1032,6 +1050,16 @@ section {
 
   .statistic span {
     font-size: 32px !important;
+  }
+
+  .modal-inner {
+    width: 350px !important;
+    height: 200px !important;
+  }
+
+  .close-modal {
+    top: -40px;
+    right: 0 !important;
   }
 }
 
@@ -1107,4 +1135,32 @@ section {
     display: flex;
     flex-direction: column;
   }
+}
+
+.header-menu .collapse {
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.header-menu .collapse span {
+  font-size: 26px;
+}
+
+.header-menu.active {
+  transform: translateX(0);
+}
+
+.header-menu.active .menu {
+  flex-direction: column;
+  gap: 25px;
+  margin: 60px 0 20px 0;
 }

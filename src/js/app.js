@@ -1,32 +1,9 @@
-var swiper = new Swiper(".banner-swiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  loop: true,
-
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-});
-
 window.addEventListener("scroll", () => {
   if (window.pageYOffset >= 100) {
     document.querySelector(".to-top_btn").style.transform = "translateX(0)";
   } else {
     document.querySelector(".to-top_btn").style.transform = "translateX(200%)";
   }
-});
-
-const headerBar = document.querySelector(".header-bar");
-
-headerBar.addEventListener("click", (e) => {
-  document.querySelector(".footer-nav").classList.toggle("active");
 });
 
 // THEME CHANGE
@@ -85,4 +62,15 @@ accessViewBTN.addEventListener("click", () => {
     .classList.toggle("active");
 });
 
+// Header bar
 
+const headerBar = document.querySelector(".header-bar");
+
+headerBar.addEventListener("click", () => {
+  document.querySelector(".header-menu").classList.add("active");
+});
+
+const closeBtn = document.querySelector(".collapse");
+closeBtn.addEventListener("click", () => {
+  document.querySelector(".header-menu").classList.remove("active");
+});
