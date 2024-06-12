@@ -881,6 +881,52 @@ section {
   transition: opacity 0.4s, visibility 0.4s;
 }
 
+/* Header Language switch */
+
+.lang-switch {
+  position: relative;
+}
+
+.lang-list {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 9999;
+  width: 100%;
+
+  transform: translateY(-100%);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: all;
+
+  transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+.lang-switch:hover .lang-list {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.lang-list .lang-select_item {
+  padding: 12px;
+}
+
+.lang-select_item a {
+  color: #333;
+
+  transition: color 0.2s;
+}
+
+.lang-select_item a:hover {
+  color: var(--main-light-color);
+}
+
 /* ==================================- */
 
 @media screen and (max-width: 1140px) {
