@@ -702,6 +702,11 @@ section {
   gap: 15px;
 }
 
+.section-about .row p {
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
 .section-about .title {
   margin: 25px 0 0 0 !important;
 }

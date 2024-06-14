@@ -74,3 +74,9 @@ const closeBtn = document.querySelector(".collapse");
 closeBtn.addEventListener("click", () => {
   document.querySelector(".header-menu").classList.remove("active");
 });
+
+const toTopBtn = document.querySelector(".to-top_btn");
+
+toTopBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
