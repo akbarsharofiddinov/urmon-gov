@@ -373,7 +373,7 @@ section {
 
 .news-page .newsCards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .news-page {
@@ -1047,13 +1047,14 @@ section {
   }
 
   .newsCard:first-child {
-    grid-column-start: auto !important;
-    grid-column-end: auto !important;
+    grid-column-start: unset !important;
+    grid-column-end: unset !important;
     flex-direction: column !important;
   }
 
-  .newsCard:first-child img {
-    max-width: 100%;
+  .newsCard img {
+    height: 250px !important;
+    width: 100% !important;
   }
 
   .newsCard:first-child .newsCard_title {
