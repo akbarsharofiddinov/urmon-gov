@@ -1223,6 +1223,17 @@ section {
     display: flex;
     flex-direction: column;
   }
+
+  .logo.header-col-1 {
+    gap: 140px !important;
+    font-size: 16px !important;
+  }
+
+  .logo.header-col-1 img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
 }
 
 .header-menu .collapse {
