@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top -->
+      <div class="header-top">
+        <div class="container">
+          <div class="top-inner">
+            <a href="/" class="logo header-col-1">
+              <img src="../images/logo/gerb.svg" alt="logo image" />
+              <img src="../images/logo/flag.svg" alt="logo image" />
+              <span class="logo_title"> OROL BO'YI MILLIY TABIYAT BOG'I </span>
+            </a>
+            <div class="phone-box header-col-2">
+              <p class="phone_title">Ishonch raqami</p>
+              <a href="tel: (+998 71) 207-88-77"> (+998 97) 649-25-79 </a>
+            </div>
+            <div class="header-col-3">
+              <!-- Social media -->
+              <div class="social-media_links">
+                <a href="#" class="header-icon"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" class="header-icon"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="header-icon"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </div>
+              <!-- Accessibility -->
+              <div class="accessibility">
+                <button class="header-icon">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <div class="accessibility-box">
+                  <button class="header-icon" id="accessibility-view_btn">
+                    <i class="fa-solid fa-eye"></i>
+                  </button>
+                  <div class="accessibility__appearance__inner">
+                    <div class="view">
+                      <p
+                        class="accessibility__appearance__inner__text"
+                        data-type="header-appearance"
+                      >
+                        Ko'rinish
+                      </p>
+                      <div class="btns">
+                        <button
+                          class="accessibility__appearance__inner__item no-mode"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                        <button
+                          class="accessibility__appearance__inner__item black-and-white"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                        <button
+                          class="accessibility__appearance__inner__item black"
+                          data-type="header-appearance"
+                        >
+                          A
+                        </button>
+                      </div>
+                    </div>
+                    <p
+                      class="accessibility__appearance__inner__text"
+                      data-type="header-appearance"
+                    >
+                      Shirift o'lchami <span id="fontSize"></span>
+                    </p>
+                    <input
+                      data-type="header-appearance"
+                      type="range"
+                      id="range"
+                      min="0"
+                      max="5"
+                      value="0"
+                      step="0.1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Select Language -->
+              <div class="lang-switch">
+                <span class="current-lang">O'zbek</span>
+                <!-- <ul class="lang-list">
+                <li class="lang-select_item"><a href="/">O'zbek</a></li>
+                <li class="lang-select_item"><a href="/">Русский</a></li>
+                <li class="lang-select_item"><a href="/">English</a></li>
+              </ul> -->
+              </div>
+              <!-- Search box -->
+              <button class="search-button header-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <button class="header-bar"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- ========================== -->
+
+      <!-- Menu -->
+      <div class="header-menu">
+        <div class="container">
+          <ul class="menu">
+            <li class="menu_item"><a href="/">Бас бет</a></li>
+            <li class="menu_item">
+              <a href="/src/pages/about-us.html">Биз хаккымызда</a>
+            </li>
+            <li class="menu_item">
+              <a href="./administration.html">Администрация</a>
+            </li>
+            <li class="menu_item">
+              <a href="./photo-gallery.html">Фото галерия</a>
+            </li>
+            <li class="menu_item"><a href="/#contact">Байланыс</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ========================= -->
+    </header>
+
+    <section class="news-page">
+      <div class="container">
+        <div class="news">
+          <h2 class="news_title title">Yangiliklar</h2>
+          <div class="newsCards">
+            <div class="newsCard">
+              <img src="../images/news/news-1.jpeg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>28/06/24, 10:04</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>38</span>
+                </div>
+                <a href="#" class="newsCard_title">
+                  Mamlakatimiz hududi o’simlik dunyosiga juda boy
+                </a>
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-2.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>24/06/24, 18:28</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>76</span>
+                </div>
+                <a href="#" class="newsCard_title">
+                  Ekologiya, atrof-muhitni muhofaza qilish va iqlim o'zgarishi
+                  vazirligi, Muhofaza etiladigan tabiiy hududlar departamenti
+                  tasarrufidagi ''Orolbo’yi” milliy tabiat bog'i hodimlari
+                  hududlardagi har kungi ish jarayonidan foto lavha.
+                </a>
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-3.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>20/06/24, 11:56</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>193</span>
+                </div>
+                <a href="#" class="newsCard_title">
+                  Hozirgi kunda dorivor o'simliklarni o'rganish, ularning
+                  kasalliklarga ta'sir kuchin bilish, ulardan dori-darmon
+                  vositalarini tayyorlash dolzarb mavzulardan hisoblanadi.
+                </a>
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-4.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>13/06/24, 20:54</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>207</span>
+                </div>
+                <a href="#" class="newsCard_title"
+                  >Orolbo’yi milliy tabiat bog’i</a
+                >
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-5.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>13/06/24, 20:54</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>96</span>
+                </div>
+                <a href="#" class="newsCard_title"
+                  >"Tabiat quchog‘ida bir kun"</a
+                >
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-6.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>13/06/24, 20:54</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>96</span>
+                </div>
+                <a href="#" class="newsCard_title"
+                  >5-iyun Butunjahon atrof-muhitni himoyalash kuni</a
+                >
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-7.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>13/06/24, 20:54</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>96</span>
+                </div>
+                <a href="#" class="newsCard_title"
+                  >Ekologiya, atrof-muhitni muhofaza qilish va iqlim o'zgarishi
+                  vazirligi, Muhofaza etiladigan tabiiy hududlar departamenti
+                  tasarrufidagi ''Orolbo’yi” milliy tabiat bog'i.
+                </a>
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-8.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>13/06/24, 20:54</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>96</span>
+                </div>
+                <a href="#" class="newsCard_title"
+                  >'Orolbo’yi” milliy tabiat bog'i.
+                </a>
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-9.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>13/06/24, 20:54</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>96</span>
+                </div>
+                <a href="#" class="newsCard_title"
+                  >Orolbo’yi milliy tabiat bog’i
+                </a>
+              </div>
+            </div>
+            <div class="newsCard">
+              <img src="../images/news/news-10.jpg" alt="news image" />
+              <div class="info-body">
+                <div class="date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>13/06/24, 20:54</span>
+                  <i class="fa-solid fa-eye"></i>
+                  <span>96</span>
+                </div>
+                <a href="#" class="newsCard_title"
+                  >Tabiatimizning har qarich yeri oltinga teng, uning go‘zal
+                  tabiati, musaffo havosi,betakror o’simlik va hayvonot dunyosi
+                  kishini o‘ziga maftun etadi.
+                </a>
+              </div>
+            </div>
+          </div>
+          <a class="news_link" href="#">Barcha yangiliklar &rightarrow;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top top-inner">
+          <a href="/" class="logo header-col-1">
+            <img src="../images/logo/gerb.svg" alt="logo image" />
+            <img src="../images/logo/flag.svg" alt="logo image" />
+            <span class="logo_title"> OROL BO'YI MILLIY TABIYAT BOG'I </span>
+          </a>
+          <h2 class="section-title title">Bog'lanish</h2>
+        </div>
+        <!-- Section Contact -->
+        <section class="section-contact">
+          <div class="section-inner">
+            <div class="contact-info">
+              <p><span>Manzil:</span>Bozataw rayoni Erkindariya APJ</p>
+              <p><span>Jumis waqti:</span>09:00 18:00</p>
+              <p><span>Telefon:</span>+998 (93) 717 09 90</p>
+              <p><span>Pochta:</span>Orol@ormon.uz</p>
+            </div>
+            <div class="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d471.91512807735603!2d59.43346368847492!3d42.8415370056892!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDUwJzI5LjMiTiA1OcKwMjYnMDEuMiJF!5e0!3m2!1sen!2s!4v1719555696620!5m2!1sen!2s"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <!-- ======================================= -->
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/32ee8f9848.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
