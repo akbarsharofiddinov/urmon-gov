@@ -336,8 +336,9 @@ section {
 }
 
 .newsCard img {
-  max-height: 230px;
+  max-height: 250px;
   height: 100%;
+  object-fit: cover !important;
 }
 
 .newsCard .info-body {
@@ -390,33 +391,6 @@ section {
   height: 350px !important;
 }
 
-/* ========================================= */
-
-/* Ads */
-
-.section-news .ads {
-  max-width: 300px;
-}
-
-.ads {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  position: relative;
-}
-
-.ad {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  border-bottom: 2px solid var(--main-light-color);
-  padding-bottom: 12px;
-}
-
-.ad a {
-  color: var(--text-color);
-  font-size: 18px;
-}
 /* ========================================= */
 
 /* Media Section */
